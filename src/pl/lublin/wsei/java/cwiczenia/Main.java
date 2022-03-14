@@ -8,6 +8,7 @@ public class Main {
                 double b = 3.31;
                         String s ="jakiś tekst";
 System.out.printf("a = %d, b = %.2f, s = 20s %n", a,b,s);
+System.out.println("Nazywaliśmy to \"witaminą B3\"");
     }
 
 }
