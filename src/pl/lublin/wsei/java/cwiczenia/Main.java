@@ -9,4 +9,5 @@ public class Main {
                         String s ="jakiś tekst";
 System.out.printf("a = %d, b = %.2f, s = 20s %n", a,b,s);
     }
+
 }
