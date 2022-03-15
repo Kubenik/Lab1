@@ -12,7 +12,20 @@ public class Main {
         String BIN, HEX;
         HEX = Integer.toHexString(DEC);
         BIN = Integer.toBinaryString(DEC);
-        System.out.printf("BIN = " + BIN + "\nHEX = " + HEX);
+        String BIN2,HEX2;
+        BIN2 = leftPad(BIN, '0', 8);
+        HEX2 = leftPad(HEX, '0', 4);
+        System.out.printf("BIN = " + BIN2 + "\nHEX = " + HEX2);
+
+    }
+    public static String leftPad(String aText, char aChar, int aWidth){
+        String res = aText;
+
+        for (int i = 0; i < aWidth - aText.length();i++)
+            res = aChar + res;
+        return res;
+
+
     }
 
 }
