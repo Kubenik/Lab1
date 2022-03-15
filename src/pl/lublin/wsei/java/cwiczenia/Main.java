@@ -5,16 +5,14 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        System.out.printf("DEC: ");
         Scanner input = new Scanner(System.in);
-        int num1 = 0, num2 = 0;
-        do {
-            System.out.print("Podaj liczby które mam dodać: ");
-            num1 = input.nextInt();
-            num2 = input.nextInt();
-                if((num1 == 0) || (num2 == 0))break;
-
-            System.out.printf("Wynik dodawania %d + %d = %d%n", num1, num2, num1 + num2);
-        } while (true);
+        int DEC = 0;
+        DEC = input.nextInt();
+        String BIN, HEX;
+        HEX = Integer.toHexString(DEC);
+        BIN = Integer.toBinaryString(DEC);
+        System.out.printf("BIN = " + BIN + "\nHEX = " + HEX);
     }
 
 }
